@@ -8,7 +8,7 @@ const DashboardingResources = (): ReactElement => {
         Dashboarding resources
       </Title>
       <List>
-        <List.Item c="pink.5">
+        <List.Item>
           <div className="flex flex-row gap-1">
             <Text>Python Plotly starter repo: </Text>
             <Anchor href="https://github.com/Alexander-D-Lewis/barbados-hackathon">
@@ -16,13 +16,13 @@ const DashboardingResources = (): ReactElement => {
             </Anchor>
           </div>
         </List.Item>
-        <List.Item c="pink.5">
+        <List.Item>
           <div className="flex flex-row gap-1">
             <Text>Plotly dash website:</Text>
             <Anchor href="https://dash.plotly.com/">dash.plotly.com/</Anchor>
           </div>
         </List.Item>
-        <List.Item c="pink.5">
+        <List.Item>
           <div className="flex flex-row gap-1">
             <Text>Dash Mantine:</Text>
             <Anchor href="https://www.dash-mantine-components.com/">
@@ -41,10 +41,16 @@ const OtherLinks = (): ReactElement => {
       <Title c="pink.5" order={4}>
         Other links
       </Title>
-      <div className="flex flex-row gap-1">
-        <Text c="pink.5">Incubator for Artificial Intelligence: </Text>
+      <Text>
+        {"Incubator for Artificial Intelligence: "}
         <Anchor href="https://ai.gov.uk/">I.AI</Anchor>
-      </div>
+      </Text>
+      <Text>
+        {"Data linkage at scale: "}
+        <Anchor href="https://moj-analytical-services.github.io/splink/index.html">
+          Splink Github
+        </Anchor>
+      </Text>
     </div>
   );
 };

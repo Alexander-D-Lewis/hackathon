@@ -56,7 +56,19 @@ export const HealthStatement = (): ReactElement => {
           Statement 2 - Public Health
         </Text>
       }
-    ></Alert>
+    >
+      <Text c="DHSC" fw={650}>
+        Potential data sources
+      </Text>
+      <List>
+        <List.Item>
+          <Text>
+            {"Annual health data: "}
+            <Anchor href="https://data.who.int/countries/052">WHO</Anchor>
+          </Text>
+        </List.Item>
+      </List>
+    </Alert>
   );
 };
 
@@ -92,7 +104,21 @@ export const EducationStatement = (): ReactElement => {
           Statement 4 - Opportunity
         </Text>
       }
-    ></Alert>
+    >
+      <Text c="Education" fw={650}>
+        Potential data sources
+      </Text>
+      <List>
+        <List.Item>
+          <Text>
+            {"Socio-Economic Data: "}
+            <Anchor href="https://data.worldbank.org/country/barbados">
+              World Bank
+            </Anchor>
+          </Text>
+        </List.Item>
+      </List>
+    </Alert>
   );
 };
 
