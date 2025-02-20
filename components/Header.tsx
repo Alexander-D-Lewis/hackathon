@@ -36,7 +36,7 @@ export const Header = (): ReactElement => {
           }}
         >
           <Title order={2} style={{ color: "white" }} fw={650}>
-            10DS x Barbados Hackathon
+            Barbados Hackathon
           </Title>
         </div>
         <div></div>
