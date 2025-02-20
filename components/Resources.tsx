@@ -55,6 +55,28 @@ const OtherLinks = (): ReactElement => {
   );
 };
 
+export const OtherData = (): ReactElement => {
+  return (    
+  <div>
+    <Title c="pink.5" order={4}>
+      Extra data
+    </Title>
+    <Text>
+      {"Geospatial data: "}
+      <Anchor href="https://caribbeanprotectedareasgateway.com/geonode/datasets/BRB">
+      caribbeanprotectedareasgateway.com
+      </Anchor>
+    </Text>
+    <Text>
+      {"General and geospatial data: "}
+      <Anchor href="https://data.humdata.org/group/brb">
+      data.humdata.org
+      </Anchor>
+    </Text>
+  </div>
+  );
+  }
+
 export const Resources = (): ReactElement => {
   return (
     <div className="flex flex-col gap-2">
@@ -72,6 +94,7 @@ export const Resources = (): ReactElement => {
       <Alert c="pink.5" color="gray.4">
         <div className="flex flex-row gap-8">
           <DashboardingResources />
+          <OtherData />
           <OtherLinks />
         </div>
       </Alert>
