@@ -155,7 +155,7 @@ export const Statements = (): ReactElement => {
         c="pink.5"
         color="pink.5"
       />
-      <Text>Pick one of the following scenarios (or one of your own!) to develop a dashboard from. We've provided some possible data sources to get you started.</Text>
+      <Text>{"Pick one of the following scenarios (or one of your own!) to develop a dashboard from. We've provided some possible data sources to get you started."}</Text>
       <SimpleGrid cols={4}>
         <SustainableStatement />
         <HealthStatement />
