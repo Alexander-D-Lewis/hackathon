@@ -49,11 +49,12 @@ export const Agenda = (): ReactElement => {
             <List.Item><Text>Overview of the week</Text></List.Item>
             <List.Item><Text>Team intro & problem statements</Text></List.Item>
             <List.Item><Text>Hack begins!</Text></List.Item>
+            <List.Item><Text fs='italic'>Python for beginners</Text></List.Item>
             </List>
             <Divider label="PM" />
             <List  className='list-disc'>
-            <List.Item><Text>Intro session to Plotly dash</Text></List.Item>
-            <List.Item><Text>Building</Text></List.Item>
+            <List.Item><Text fs='italic'>Intro session to Plotly dash</Text></List.Item>
+            <List.Item><Text>More building!</Text></List.Item>
             </List>
           </div>
         </Alert>
@@ -71,11 +72,11 @@ export const Agenda = (): ReactElement => {
           <Divider label="AM" />
           <List  className='list-disc'>
           <List.Item><Text>Kick off</Text></List.Item>
-          <List.Item><Text>What makes a good product</Text></List.Item>
+          <List.Item><Text fs='italic'>What makes a good product</Text></List.Item>
           </List>
           <Divider label="PM" />
           <List  className='list-disc'>
-          <List.Item><Text> Continue building </Text></List.Item>
+          <List.Item><Text>Continue building </Text></List.Item>
           <List.Item><Text>Presentating your dashboards</Text></List.Item>
           </List>
         </Alert>
@@ -113,7 +114,7 @@ export const Agenda = (): ReactElement => {
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>The Future of Data Science in Policy Making</Text>
-                <Text size="xs">What does the future hold? Blue sky</Text>
+                <Text size="xs">What does the future hold?</Text>
               </div>
             </List.Item>
           </List>
@@ -137,13 +138,13 @@ export const Agenda = (): ReactElement => {
                 <Text>
                   Building Resilience in Government Using Data Science
                 </Text>
-                <Text size="xs">Forecasting</Text>
+                <Text size="xs">Forecasting, risk tracking</Text>
               </div>
             </List.Item>
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>Leveraging Data Science for Crisis Management</Text>
-                <Text size="xs">SitCen</Text>
+                <Text size="xs">Situtation Centre, Evidence House</Text>
               </div>
             </List.Item>
           </List>
@@ -153,7 +154,10 @@ export const Agenda = (): ReactElement => {
               <div className="flex flex-col gap-1">
                 <Text>Innovations in Policy Analysis</Text>
                 <Text size="xs">
-                  AI: Consult, Redbox; Data: RAPs, Dashboards, Data Linkage
+                  Data Science: RAPs, Dashboards, Linkage
+                </Text>
+                <Text size='xs'>
+                AI: Consult, Redbox
                 </Text>
               </div>
             </List.Item>

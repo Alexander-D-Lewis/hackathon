@@ -125,6 +125,7 @@ export const EducationStatement = (): ReactElement => {
       }
     >
       <Text>Build a dashboard which tells a story in data about reducing poverty in Barbados.</Text>
+      <Space h='20px'/>
       <Text c="Education" fw={650}>
         Potential data sources
       </Text>
