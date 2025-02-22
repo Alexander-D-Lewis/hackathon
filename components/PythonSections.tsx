@@ -64,18 +64,18 @@ const AppStructure = () => {
     };
 
     const infoLookup: InfoLookupType = {
-        'components': 'This folder should contain scripts with components we want to reuse across the dashboard such as buttons.',
-        'layouts':'This folder should contain scripts with the layout for each tab of the dashboard and the functions that help build them.',
-        'functions':'This folder should contain scripts with functions that help handle the data used in the dashboard.',
-        'tabs':'This folder should contain scripts with the layout for each tab of the dashboard. It is easier to maintain if we break the code out into separate files.',
-        'tab1.py': 'The layout code for tab 1',
-        'tab2.py': 'The layout code for tab 2',
-        'tab3.py': 'The layout code for tab 3',
-        'template.py': 'This file is where we set the template for the plotly graphing package. This keeps graphs consistent across the dashboard without duplicating code.',
-        'prep_data.py': 'This file is where we ingest and process data for the dashboard. Ideally we do as little of this in the dashboard as possible to keep the code clean and easy to read.',
-        'dashboard.py': 'The dashboard file is where we import layouts for each of the tabs and add them to the dashboard. This way we can break the code out across multiple scripts which is much easier to maintain and debug.',
-        'app.py': 'We define the dash app here and import it into the other scripts as required. We also add our CSS and other styling here.',
-        'main.py': 'This is the main file of the dashboard and what we run when we want to run the whole dashboard. It imports the app and runs it.',
+        "components": "This folder should contain scripts with components we want to reuse across the dashboard such as buttons.",
+        "layouts":"This folder should contain scripts with the layout for each tab of the dashboard and the functions that help build them.",
+        "functions":"This folder should contain scripts with functions that help handle the data used in the dashboard.",
+        "tabs":"This folder should contain scripts with the layout for each tab of the dashboard. It is easier to maintain if we break the code out into separate files.",
+        "tab1.py": "The layout code for tab 1",
+        "tab2.py": "The layout code for tab 2",
+        "tab3.py": "The layout code for tab 3",
+        "template.py": "This file is where we set the template for the plotly graphing package. This keeps graphs consistent across the dashboard without duplicating code.",
+        "prep_data.py": "This file is where we ingest and process data for the dashboard. Ideally we do as little of this in the dashboard as possible to keep the code clean and easy to read.",
+        "dashboard.py": "The dashboard file is where we import layouts for each of the tabs and add them to the dashboard. This way we can break the code out across multiple scripts which is much easier to maintain and debug.",
+        "app.py": "We define the dash app here and import it into the other scripts as required. We also add our CSS and other styling here.",
+        "main.py": "This is the main file of the dashboard and what we run when we want to run the whole dashboard. It imports the app and runs it.",
     };
 
 
@@ -154,7 +154,7 @@ from layouts.functions.graphs import gapminder_graph
 
                     <div>
                     <Text>Create components for the page</Text>
-                    <Text size='sm'>Some layouts have lots of components so it's cleaner to define them outside of the layout.</Text>
+                    <Text size='sm'>{"Some layouts have lots of components so it's cleaner to define them outside of the layout."}</Text>
                     <Code block>
                         {`title = dmc.Title('Gapminder data')
 
@@ -167,7 +167,7 @@ graph = dcc.Graph(id='gapminder-graph')
 
                     <div>
                         <Text>Define the layout</Text>
-                        <Text size='sm'>If we're creating an app with multiple tabs then we can import this into dashboard.py</Text>
+                        <Text size='sm'>{"If we're creating an app with multiple tabs then we can import this into dashboard.py"}</Text>
                         <Code block>
                             {`layout = html.Div([
     title,
@@ -180,8 +180,8 @@ graph = dcc.Graph(id='gapminder-graph')
                         <Text>Add callbacks to make the dropdown work!</Text>
                         <Text size='sm'>We use the <Code>{`@app`}</Code> decorator to provide the inputs and outputs to the update_graph function. The Input and Output functions take two main arguments:</Text>
                         <List listStyleType="disc">
-                            <List.Item><Text size='sm'>First is the id of the component to either trigger the function e.g. selection box or to receive the output.</Text> </List.Item>
-                            <List.Item><Text size='sm'>The second is the props that will be updating or updated such as 'n_clicks' for buttons or 'children' to update the text in a div.</Text></List.Item>
+                            <List.Item><Text size='sm'>{"First is the id of the component to either trigger the function e.g. selection box or to receive the output."}</Text> </List.Item>
+                            <List.Item><Text size='sm'>{"The second is the props that will be updating or updated such as 'n_clicks' for buttons or 'children' to update the text in a div."}</Text></List.Item>
                         </List>
                         <Code block>
                             {`@app.callback(
