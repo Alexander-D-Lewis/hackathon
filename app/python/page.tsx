@@ -1,11 +1,14 @@
 "use client";
 import React from "react";
-import {Text} from "@mantine/core"
+
+import PythonExamples from "@/components/PythonSections"
 
 const PythonPage = () => {
+
+
     return (
-        <div className="flex flex-col m-4 gap-4">
-        <Text>Python walkthrough</Text>
+        <div className="flex flex-col m-4 gap-4 max-w-screen">
+        <PythonExamples />
         </div>
     )
 }
