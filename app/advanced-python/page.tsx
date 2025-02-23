@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import {Title, Divider} from "@mantine/core"
+import { AdvancedPython } from "@/components/PythonSections"
 
 const TypescriptPage = () => {
     return (
@@ -10,7 +11,7 @@ const TypescriptPage = () => {
           orientation="horizontal"
           label={
             <Title order={2} c="pink.5">
-              Intro to dashboarding in Typescript
+              More advanced Python Plotly dash
             </Title>
           }
           w="100%"
@@ -20,7 +21,7 @@ const TypescriptPage = () => {
         />
         <div className='flex flex-col gap-4'>
         </div>
-
+          <AdvancedPython/>
         </div>
         </div>
     )

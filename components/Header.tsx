@@ -15,7 +15,7 @@ export const Header = (): ReactElement => {
   return (
     <>
       <Grid id="header" className="simple-header" data-testid="simple-header">
-        <Grid.Col span={3}>
+        <Grid.Col span={4}>
         <Link href="/">
           <div
             className="header--logo-container"
@@ -25,19 +25,19 @@ export const Header = (): ReactElement => {
           </div>
         </Link>
         </Grid.Col>
-        <Grid.Col span={6}>
+        <Grid.Col span={4}>
         <div className='w-full flex flex-row justify-center align-center'>
           <Title order={2} style={{ color: "white" }} fw={650}>
             Barbados Hackathon
           </Title>
         </div>
         </Grid.Col>
-        <Grid.Col span={3}>
+        <Grid.Col span={4}>
         <div className='flex flex-row gap-3 pr-5 pt-[0.1rem] h-full justify-center align-center'>
           <Divider orientation='vertical' color='white' />
           <Text fw={650} c='white' size='sm' className='whitespace-pre tracking-tighter'>{"Dashboard\n walkthroughs: "}</Text>
-          <Button c='white' color="white" variant="outline" onClick={()=>{navAction('/python')}}>Python</Button>
-          <Button c='white' color="white" variant="outline" onClick={()=>{navAction('/typescript')}}>TypeScript</Button>
+          <Button c='white' color="white" variant="outline" className='w-auto' onClick={()=>{navAction('/python')}}>Intro to Plotly</Button>
+          <Button c='white' color="white" variant="outline" className='w-auto' onClick={()=>{navAction('/advanced-python')}}>Advanced Plotly</Button>
         </div>
         </Grid.Col>
       </Grid>
