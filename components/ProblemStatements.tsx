@@ -95,7 +95,7 @@ export const DigitalStatement = (): ReactElement => {
         <Anchor href="https://ai.gov.uk/projects/consult/">
           {" I.AI's Consult"}
         </Anchor>
-        , build a dashboard exploring insights from survey data?
+        , can you build a dashboard exploring insights from survey data?
       </Text>
       <Space h='20px'/>
       <Text c="red" fw={650}>
