@@ -155,7 +155,7 @@ from layouts.functions.graphs import gapminder_graph
                     <div>
                     <Text c='pink'>Create components for the page</Text>
                     <Text size='sm'>{"Some layouts have lots of components so it's cleaner to define them outside of the layout. Components are functional parts of a page such as buttons or titles. Dash has many to choose from but Dash mantine offers a similar section with more styling. You can of course style all of these using css."}</Text>
-                    <Text size='sm'>Ids for components need to be unique. If you do not provide one dash will randomly generate one for you. If you'd like to dynamically alter the component in some way you should specify an id yourself - so you can use it in a callback.</Text>
+                    <Text size='sm'>{"Ids for components need to be unique. If you do not provide one dash will randomly generate one for you. If you'd like to dynamically alter the component in some way you should specify an id yourself - so you can use it in a callback."}</Text>
                     <Code block>
                         {`title = dmc.Title('Gapminder data')
 
@@ -184,8 +184,8 @@ graph = dcc.Graph(id='gapminder-graph')
                             <List.Item><Text size='sm'>{"First is the id of the component to either trigger the function e.g. selection box or to receive the output."}</Text> </List.Item>
                             <List.Item><Text size='sm'>{"The second is the props that will be updating or updated such as 'n_clicks' for buttons or 'children' to update the text in a div."}</Text></List.Item>
                         </List>
-                        <Text size='sm'>You should ideally have one callback for each component you want to change, rather than combining them together into one big callback. This makes it easier to debug. There is also a State function that works like Input but won't trigger the callback when that component is updated.</Text>
-                        <Text size='sm'>NB: Callbacks don't cause errors in terminal so it's recommended to run the dashboard in debug mode when developing the dashboard.</Text>
+                        <Text size='sm'>{"You should ideally have one callback for each component you want to change, rather than combining them together into one big callback. This makes it easier to debug. There is also a State function that works like Input but won't trigger the callback when that component is updated."}</Text>
+                        <Text size='sm'>{"NB: Callbacks don't cause errors in terminal so it's recommended to run the dashboard in debug mode when developing the dashboard."}</Text>
                         <Code block>
                             {`@app.callback(
     Output('gapminder-graph', 'figure'),
