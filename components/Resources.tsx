@@ -41,6 +41,9 @@ const OtherLinks = (): ReactElement => {
       <Title c="pink.5" order={4}>
         Other links
       </Title>
+      <Text>{"Slack link: "}
+      <Anchor target="_blank" href='https://join.slack.com/t/barbadoshackathon/shared_invite/zt-30fyu7pt1-DvXywEFCSPDv925qMBsYHA'>Join Slack</Anchor>
+      </Text>
       <Text>
         {"Incubator for Artificial Intelligence: "}
         <Anchor href="https://ai.gov.uk/">I.AI</Anchor>
