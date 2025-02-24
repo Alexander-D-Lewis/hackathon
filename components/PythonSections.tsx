@@ -159,7 +159,7 @@ from layouts.functions.graphs import gapminder_graph
                     <Code block>
                         {`title = dmc.Title('Gapminder data')
 
-# drop down to select a country
+# drop down to select a country
 country_select = dmc.Select(id='country-select', options=[{'label': i, 'value': i} for i in gapminder_df['country'].unique()])
 graph = dcc.Graph(id='gapminder-graph')
 `}
@@ -184,7 +184,8 @@ graph = dcc.Graph(id='gapminder-graph')
                             <List.Item><Text size='sm'>{"First is the id of the component to either trigger the function e.g. selection box or to receive the output."}</Text> </List.Item>
                             <List.Item><Text size='sm'>{"The second is the props that will be updating or updated such as 'n_clicks' for buttons or 'children' to update the text in a div."}</Text></List.Item>
                         </List>
-                        <Text size='sm'>You should ideally have one callback for each component you want to change, rather than combining them together into one big callback. This makes it easier to debug. NB: Callbacks don't cause errors in terminal so it's recommended to run the dashboard in debug mode when developing the dashboard.</Text>
+                        <Text size='sm'>You should ideally have one callback for each component you want to change, rather than combining them together into one big callback. This makes it easier to debug. There is also a State function that works like Input but won't trigger the callback when that component is updated.</Text>
+                        <Text size='sm'>NB: Callbacks don't cause errors in terminal so it's recommended to run the dashboard in debug mode when developing the dashboard.</Text>
                         <Code block>
                             {`@app.callback(
     Output('gapminder-graph', 'figure'),
