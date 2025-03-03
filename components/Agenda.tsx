@@ -36,7 +36,7 @@ export const Agenda = (): ReactElement => {
         <Alert
           title={
             <Text size="lg" fw={650}>
-              Day 1
+              Day 1 - Start of the hack
             </Text>
           }
           c="pink.5"
@@ -45,11 +45,17 @@ export const Agenda = (): ReactElement => {
         >
           <div className="flex flex-col">
             <Divider label="AM" />
-            <Text>Overview of the week</Text>
-            <Text>Team intro & problem statements</Text>
+            <List  className='list-disc'>
+            <List.Item><Text>Overview of the week</Text></List.Item>
+            <List.Item><Text>Team intro & problem statements</Text></List.Item>
+            <List.Item><Text>Hack begins!</Text></List.Item>
+            <List.Item><Text fs='italic'>Python for beginners</Text></List.Item>
+            </List>
             <Divider label="PM" />
-            <Text>Intro session to Plotly dash</Text>
-            <Text>Building</Text>
+            <List  className='list-disc'>
+            <List.Item><Text fs='italic'>Intro session to Plotly dash</Text></List.Item>
+            <List.Item><Text>More building!</Text></List.Item>
+            </List>
           </div>
         </Alert>
       </Grid.Col>
@@ -57,18 +63,22 @@ export const Agenda = (): ReactElement => {
         <Alert
           title={
             <Text size="lg" fw={650}>
-              Day 2
+              Day 2 - Presenting your products
             </Text>
           }
           c="pink.5"
           color="gray.4"
         >
           <Divider label="AM" />
-          <Text>Kick off</Text>
-          <Text>What makes a good product</Text>
+          <List  className='list-disc'>
+          <List.Item><Text>Kick off</Text></List.Item>
+          <List.Item><Text fs='italic'>What makes a good product</Text></List.Item>
+          </List>
           <Divider label="PM" />
-          <Text> Continue building </Text>
-          <Text>Presentating your tools</Text>
+          <List  className='list-disc'>
+          <List.Item><Text>Continue building </Text></List.Item>
+          <List.Item><Text>Presentating your dashboards</Text></List.Item>
+          </List>
         </Alert>
       </Grid.Col>
 
@@ -76,14 +86,14 @@ export const Agenda = (): ReactElement => {
         <Alert
           title={
             <Text fw={650} size="lg">
-              Day 3 - Data Science in the Government
+              Day 3 - Data science foundations
             </Text>
           }
           c="pink.5"
           color="gray.4"
         >
           <Divider label="AM"></Divider>
-          <List>
+          <List  className='list-disc'>
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>Data Science in the UK Government</Text>
@@ -94,17 +104,17 @@ export const Agenda = (): ReactElement => {
               <div className="flex flex-col gap-1">
                 <Text>Building Data Science Capability</Text>
                 <Text size="xs">
-                  Evidence House, Hackathons, Data Science Accelerator
+                  Evidence House, Hackathons, DS Accelerator
                 </Text>
               </div>
             </List.Item>
           </List>
           <Divider label="PM"></Divider>
-          <List>
+          <List  className='list-disc'>
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>The Future of Data Science in Policy Making</Text>
-                <Text size="xs">What does the future hold? Blue sky</Text>
+                <Text size="xs">What does the future hold?</Text>
               </div>
             </List.Item>
           </List>
@@ -114,7 +124,7 @@ export const Agenda = (): ReactElement => {
         <Alert
           title={
             <Text size="lg" fw={650}>
-              Day 4 - Data Science in Barbados
+              Day 4 - The future of data science
             </Text>
           }
           c="pink.5"
@@ -122,29 +132,32 @@ export const Agenda = (): ReactElement => {
           mih="250px"
         >
           <Divider label="AM"></Divider>
-          <List>
+          <List className='list-disc'>
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>
                   Building Resilience in Government Using Data Science
                 </Text>
-                <Text size="xs">Forecasting</Text>
+                <Text size="xs">Forecasting, risk tracking</Text>
               </div>
             </List.Item>
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>Leveraging Data Science for Crisis Management</Text>
-                <Text size="xs">SitCen</Text>
+                <Text size="xs">Situtation Centre, Evidence House</Text>
               </div>
             </List.Item>
           </List>
           <Divider label="PM"></Divider>
-          <List>
+          <List className='list-disc'>
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>Innovations in Policy Analysis</Text>
                 <Text size="xs">
-                  AI: Consult, Redbox; Data: RAPs, Dashboards, Data Linkage
+                  Data Science: RAPs, Dashboards, Linkage
+                </Text>
+                <Text size='xs'>
+                AI: Consult, Redbox
                 </Text>
               </div>
             </List.Item>

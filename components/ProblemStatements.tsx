@@ -7,6 +7,7 @@ import {
   Title,
   Anchor,
   List,
+  Space
 } from "@mantine/core";
 
 export const SustainableStatement = (): ReactElement => {
@@ -21,6 +22,8 @@ export const SustainableStatement = (): ReactElement => {
       }
       mih="250px"
     >
+      <Text>Design a dashboard exploring different policy options to a challenge facing the sustainability mission. </Text>
+      <Space h='20px'/>
       <Text c="Energy" fw={650}>
         Potential data sources
       </Text>
@@ -57,6 +60,10 @@ export const HealthStatement = (): ReactElement => {
         </Text>
       }
     >
+      <Text>
+        Design an situation report-style dashboard showing the latest health data for Barbados.
+      </Text>
+      <Space h='20px'/>
       <Text c="DHSC" fw={650}>
         Potential data sources
       </Text>
@@ -88,8 +95,20 @@ export const DigitalStatement = (): ReactElement => {
         <Anchor href="https://ai.gov.uk/projects/consult/">
           {" I.AI's Consult"}
         </Anchor>
-        , what insights can you draw from large datasets of text?
+        , can you build a dashboard exploring insights from survey data?
       </Text>
+      <Space h='20px'/>
+      <Text c="red" fw={650}>
+        Potential data sources
+      </Text>
+      <List>
+        <List.Item>
+          <Text>
+            {"Open source survey data: "}
+            <Anchor href="https://github.com/github/open-source-survey/tree/main">Github</Anchor>
+          </Text>
+        </List.Item>
+      </List>
     </Alert>
   );
 };
@@ -105,6 +124,8 @@ export const EducationStatement = (): ReactElement => {
         </Text>
       }
     >
+      <Text>Build a dashboard which tells a story in data about reducing poverty in Barbados.</Text>
+      <Space h='20px'/>
       <Text c="Education" fw={650}>
         Potential data sources
       </Text>
@@ -135,7 +156,8 @@ export const Statements = (): ReactElement => {
         w="100%"
         c="pink.5"
         color="pink.5"
-      ></Divider>
+      />
+      <Text>{"Pick one of the following scenarios (or one of your own!) to develop a dashboard from. We've provided some possible data sources to get you started."}</Text>
       <SimpleGrid cols={4}>
         <SustainableStatement />
         <HealthStatement />

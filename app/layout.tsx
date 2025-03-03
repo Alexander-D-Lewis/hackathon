@@ -4,9 +4,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "./styles.css";
 import "@mantine/core/styles.css";
-// import "@mantine/charts/styles.css";
-// import "@mantine/dates/styles.css";
-// import "@mantine/notifications/styles.css";
+import "@mantine/charts/styles.css";
+import "@mantine/dates/styles.css";
+import "@mantine/notifications/styles.css";
+import "@mantine/carousel/styles.css";
 
 import { MantineProvider } from "@mantine/core";
 import { Header } from "../components/Header";
