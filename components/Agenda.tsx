@@ -87,7 +87,7 @@ export const Agenda = (): ReactElement => {
             <List.Item>
               <div className="flex flex-col gap-1">
                 <Text>Data Science in the UK Government</Text>
-                <Text size="xs">10DS, I.AI and Departments</Text>
+                <Text size="xs">I.AI and Departments</Text>
               </div>
             </List.Item>
             <List.Item>

@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Title } from "@mantine/core";
-import Icon from "@/public/assets/10ds.svg";
+import Icon from "@/public/assets/i-dot-ai-Official-Logo.svg";
 import { useRouter } from "next/navigation";
 
 export const Header = (): ReactElement => {
@@ -20,7 +20,12 @@ export const Header = (): ReactElement => {
             className="header--logo-container"
             onClick={(): void => navAction("/")}
           >
-            <Image src={Icon} className="header--logo" alt="10DS Icon" />
+            <Image
+              src={Icon}
+              className="header--logo"
+              alt="iAI Icon"
+              height={30}
+            />
           </div>
         </Link>
         <div
